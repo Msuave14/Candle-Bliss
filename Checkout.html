@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout - Candle Bliss</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0a1931;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #0a1931;
+        }
+
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #0a1931;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #122e5c;
+        }
+
+        .home-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+
+        <form action="thankyou.html" method="post">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email Address" required />
+            <input type="text" name="address" placeholder="Shipping Address" required />
+            <button type="submit">Place Order</button>
+        </form>
+
+        <div class="home-button">
+            <a href="CanWeb.html">
+                <button>🏠 Go to Home</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

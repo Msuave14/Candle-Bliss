@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login - Candle Bliss</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0a1931;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        h2 {
+            color: #0a1931;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #0a1931;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1a2b50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form onsubmit="handleLogin(event)">
+            <input type="text" placeholder="Username" id="username" required /><br />
+            <input type="password" placeholder="Password" id="password" required /><br />
+            <button type="submit">Login</button>
+        </form>
+
+        <br>
+
+        <div class="button">
+            <a href="CanWeb.html"><button>Home</button></a>
+        </div>
+    </div>
+
+    
+
+    <script>
+        function handleLogin(e) {
+            e.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Very basic example - replace with real authentication
+            if (username === "admin" && password === "1234") {
+                alert("Login successful!");
+                window.location.href = "CanWeb.html";
+            } else {
+                alert("Invalid login.");
+            }
+        }
+    </script>
+
+</body>
+</html>
